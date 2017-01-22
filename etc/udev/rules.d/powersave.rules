@@ -1,0 +1,2 @@
+SUBSYSTEM=="power_supply", ATTR{online}=="0", RUN+="/usr/bin/cpupower frequency-set -g powersave -u 1.6GHz"
+SUBSYSTEM=="power_supply", ATTR{online}=="1", RUN+="/usr/bin/cpupower frequency-set -g performance -u 3.6GHz"
